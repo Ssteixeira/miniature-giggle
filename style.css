@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#ffc2d1, #ffe6f0);
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    color: #d6336c;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #d6336c;
+  }
+  
+  #noBtn {
+    position: absolute;
+  }
+  
+  .cat-img {
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+  }
+  
+  #result {
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Chuva de corações */
+  .hearts::before,
+  .hearts::after {
+    content: '💖 💘 💝 💗 💓 💞 💕 💟 ❤️ 💗 💖 💖 💘 💝 💗 💓 💞 💕 💟 ❤️ 💗 💖 💖 💘 💝 💗 💓 💞 💕 💟 ❤️ 💗 💖';
+    position: fixed;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    animation: fall 8s linear infinite;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  .hearts::after {
+    animation-delay: 4s;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
