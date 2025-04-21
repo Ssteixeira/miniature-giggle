@@ -1,14 +1,18 @@
 function showLove() {
-    document.getElementById('result').classList.remove('hidden');
-    document.getElementById('yesBtn').style.display = 'none';
-    document.getElementById('noBtn').style.display = 'none';
-  }
-  
-  function moveButton() {
-    const noBtn = document.getElementById('noBtn');
-    const x = Math.floor(Math.random() * (window.innerWidth - 100));
-    const y = Math.floor(Math.random() * (window.innerHeight - 100));
-    noBtn.style.left = `${x}px`;
-    noBtn.style.top = `${y}px`;
-  }
-  
+    document.getElementById("result").classList.remove("hidden");
+    document.getElementById("sadResult").classList.add("hidden");
+}
+
+function showSad() {
+    document.getElementById("sadResult").classList.remove("hidden");
+    document.getElementById("result").classList.add("hidden");
+}
+
+function moveButton() {
+    const noButton = document.getElementById("noBtn");
+    const randomX = Math.floor(Math.random() * (window.innerWidth - noButton.offsetWidth));
+    const randomY = Math.floor(Math.random() * (window.innerHeight - noButton.offsetHeight));
+
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
+}

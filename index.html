@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Do You Love Me? 💖</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <audio autoplay loop>
         <source src="https://www.youtube.com/watch?v=2Vv-BfVoq4g" type="audio/mp3">
@@ -18,16 +16,19 @@
         <h1>Do you love me? 💘</h1>
         <div class="buttons">
             <button id="yesBtn" onclick="showLove()">Yes 😻</button>
-            <button id="noBtn" onmouseover="moveButton()">No 🙃</button>
+            <button id="noBtn" onmouseover="moveButton()" onclick="showSad()">No 🙃</button>
         </div>
         <div id="result" class="hidden">
             <img src="https://stickerly.pstatic.net/sticker_pack/FdxanrrcgtPZdMHPc9DNw/U2X3A9/15/cc95e5a6-5c4f-476b-b033-e1928394716f.png"
-                alt="Happy cat" class="cat-img">
+                 alt="Happy cat" class="cat-img">
             <p>I knew it! I love you too! ❤️<br>❤️ Ich liebe dich ❤️ <br>❤️ Kocham Cię ❤️</p>
+        </div>
+        <div id="sadResult" class="hidden">
+            <img src="https://pbs.twimg.com/media/D8KnpNoXUAAhN9_.jpg" alt="Sad cat" class="cat-img">
+            <p>Oh no... 💔 That makes me sad... 🥺</p>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
